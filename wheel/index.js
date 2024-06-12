@@ -345,7 +345,7 @@ const p5Instance = new p5(wheelSketch);
 
 p5Instance.onAfterSetup = function () {
     p5Instance.setVideos([
-        ['videos/3.mp4', 1],
+        
     
         
     ]);
