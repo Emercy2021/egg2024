@@ -326,18 +326,18 @@ button:disabled {
 @keyframes play-video {
 	0% {
 		opacity: 0;
-		
 	}
-	5% {
+	
+	10% {
 		opacity: 1;
 	}
 
-	95% {
+	90% {
 		opacity: 1;
 	}
+	
 	100% {
-		opacity: 0;
-		
+		opacity: 0;	
 	}
 }
 #video>video {
