@@ -346,9 +346,32 @@ const p5Instance = new p5(wheelSketch);
 p5Instance.onAfterSetup = function () {
     p5Instance.setVideos([
      
-        ['videos/19.mp4', 1],
+        ['videos/1.mov', 1],
         ['videos/2.mp4', 1],
+        ['videos/3.mp4', 1],
+        ['videos/4.mp4', 1],
         ['videos/5.mp4', 1],
+        ['videos/6.mp4', 1],
+        ['videos/7.mp4', 1],
+        ['videos/8.mp4', 1],
+        ['videos/9.mp4', 1],
+        ['videos/10.mov', 1],
+        ['videos/11.mp4', 1],
+        ['videos/12.mp4', 1],
+        ['videos/13.mp4', 1],
+        ['videos/14.mp4', 1],
+        ['videos/15.mp4', 1],
+        ['videos/16.mp4', 1],
+        ['videos/17.mp4', 1],
+        ['videos/18.mp4', 1],
+        ['videos/19.mp4', 1],
+        ['videos/20.mp4', 1],
+        ['videos/21.mp4', 1],
+        ['videos/22.mp4', 1],
+        ['videos/23.mp4', 1],
+        ['videos/24.mp4', 1],
+        ['videos/25.mp4', 1],
+        ['videos/26.mp4', 1],
       
       
         
