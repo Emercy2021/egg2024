@@ -353,7 +353,7 @@ p5Instance.onAfterSetup = function () {
         ['videos/5.mp4', 1],
         ['videos/6.mp4', 1],
         ['videos/7.mp4', 1],
-        ['videos/8.mp4', 1],
+        ['videos/8.mp4', 7],
         ['videos/9.mp4', 1],
         ['videos/10.mov', 1],
         ['videos/11.mp4', 1],
