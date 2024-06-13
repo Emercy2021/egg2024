@@ -347,7 +347,7 @@ p5Instance.onAfterSetup = function () {
     p5Instance.setVideos([
      
     
-        ['videos/8.mp4', 7],
+        ['videos/8.mp4', 6],
   
       
       
