@@ -344,4 +344,10 @@ button:disabled {
 	animation: play-video 22s;
 }
 
+.content > button{
+	position:absolute;
+	left:45%;
+	bottom:0;
+}
+
 
