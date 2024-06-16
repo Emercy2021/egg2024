@@ -203,7 +203,7 @@ button:disabled {
 	width: 100%;
 	justify-content: space-between;
 	user-select: none;
-	font-size:22px;
+	font-size:20px;
 	/*opacity: 0.6;*/
 	/*transition: opacity 0.3s;*/
 }
