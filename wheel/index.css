@@ -203,7 +203,7 @@ button:disabled {
 	width: 100%;
 	justify-content: space-between;
 	user-select: none;
-	font-size:20px;
+	font-size:22px;
 	/*opacity: 0.6;*/
 	/*transition: opacity 0.3s;*/
 }
@@ -320,7 +320,7 @@ button:disabled {
 	border-radius:50%;
 	width: 120px;
 	height: 120px;
-	filter: drop-shadow(0 0 16px #fff);
+	
 }
 #btn-edit {
 	font-size: 2em;
@@ -354,5 +354,11 @@ button:disabled {
 	left:45%;
 	bottom:0;
 }
+
+input[type="radio"]:active .content {
+	display: none !important;
+  }
+  
+ 
 
 
