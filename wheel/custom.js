@@ -18,3 +18,12 @@ scrudge.addEventListener('click', function () {
     
     }
 );
+
+
+let scrooge = document.getElementById("scrooge");
+scrooge.addEventListener('click', function () {
+    document.getElementById("image").style.borderRadius = "0%";
+    
+    }
+);
+
