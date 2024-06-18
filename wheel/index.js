@@ -64,14 +64,6 @@ const dataSets = {
         'UPG: Любимые игры судьи ЮПГ',
     ],
  
-    streamers: [
-        'MistaFaker',
-        'Lasqa',
-        'Liz0n',
-        'Melharucos',
-        'UselessMouth',
-        'UncleBjorn',
-    ],
     debuffs: [
         'Берсерк',
         'Я - Русский',
@@ -182,23 +174,6 @@ class PresetAll extends Preset {
     }
 }
 
-class PresetWithoutSpecialRolls extends Preset {
-    constructor(isDefault) {
-        super(
-            'Без спецроллов',
-            [
-                'Чуйка на говно',
-                'Выбор Бумера',
-                'Выбор Зумера',
-                'Чат здесь закон',
-                'Я здесь закон',
-                'Never Lucky',
-            ],
-            isDefault
-        );
-    }
-}
-
 class Presets {
     constructor() {
         this._presets = {
@@ -214,9 +189,7 @@ class Presets {
             debuffs: [
                 new PresetAll(),
             ],
-            streamers: [
-                new PresetAll(),
-            ],
+           
         };
     }
 
@@ -283,9 +256,6 @@ function getImageURI(index) {
             result = '../hpg-inventory/images/class/0' + ('0' + (mapping[index])).slice(-2) + '.png';
             break;
 
-        case "streamers":
-            result = '../images/streamers/'+ dataSets[currentDataSet][index] +'.png';
-            break;
     }
 
     return result;
