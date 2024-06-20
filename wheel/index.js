@@ -20,15 +20,6 @@ const dataSets = {
         '14',
         '15',
         '16',
-        '17',
-        '18',
-        '19',
-        '20',
-        '21',
-        '22',
-        '23',
-        '24',
-        '25',
     ],
     effects: [
         'HPG3: Война',
@@ -159,11 +150,12 @@ class Preset {
         for(const i in this._disabledEntries) {
             if (editedDataSets[currentDataSet][this._disabledEntries[i]]) {
                 editedDataSets[currentDataSet][this._disabledEntries[i]] = false;
+                console.log(this);
             }
         }
 
         editOptions.innerHTML = generateOptions(editedDataSets[currentDataSet]);
-
+     
         return false;
     }
 }
@@ -228,6 +220,7 @@ function getImageURI(index) {
     switch (currentDataSet) {
         case "inventory":
             offset = 50;
+           
         case "effects":
             result = '../hpg-inventory/images/0' + ('0' + (index+1 + offset)).slice(-2) + '.png';
             break;
@@ -307,8 +300,12 @@ p5Instance.onAfterSetup = function () {
 
 const image = document.querySelector('#item-image img');
 p5Instance.onSelectItem = function(data, selectedKey) {
+    let customz = dataSets[currentDataSet].indexOf(data[selectedKey]);
+    console.log(dataSets[currentDataSet].indexOf(data[selectedKey]));
+    descriptionContainer.innerHTML = inventoryDescription[customz];
     if (dataSets[currentDataSet]) {
         image.src = getImageURI(dataSets[currentDataSet].indexOf(data[selectedKey]));
+        
     }
     else {
         image.src = '../hpg-inventory/images/000.png';

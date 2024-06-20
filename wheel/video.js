@@ -26,12 +26,14 @@ class Video {
         this._resetCurrentTime();
         this._video.volume = this.volume;
         this._video.style.display = 'unset';
+        descriptionContainer.style = "display: none";
         await this._video.play();
     }
 
     pause() {
         this._video.pause();
         this._video.style.display = 'none';
+        descriptionContainer.style = "display: block";
         this.changeVideo();
     }
 
@@ -66,6 +68,7 @@ class Video {
 
     _getRandomIndex() {
         return Math.floor(Math.random() * this._urls.length);
+        
     }
 
     _saveVolume() {
