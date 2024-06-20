@@ -14,8 +14,9 @@ html, body {
 	align-content: center;
 	align-items: center;
 	justify-content: center;
-	font-family: Calibri, serif;
+	font-family: "Roboto", "Calibri", serif;
 	color: #eee;
+	font-size:18px;
 }
 a {
 	color: #9fd9ff;
@@ -26,14 +27,11 @@ a:hover {
 
 #descriptionContainer {
 	position: absolute;
-	width: 380px;
-	right: -200px;
-	background: linear-gradient(90deg, #141e30, transparent);
-	padding: 10px;
-	border-radius: 0.3rem;
-	height:250px;
-	border:1px solid blue;
-	font-size:24px;
+    width: 380px;
+    right: -200px;
+    background: linear-gradient(90deg, #141e30, transparent);
+    padding: 10px;
+    border-radius: 0.3rem;
 }
 
 .content {
@@ -47,6 +45,7 @@ a:hover {
 #canvas {
 	position: relative;
 	font-size: 0;
+	margin-right:100px;
 }
 #video {
 	position: absolute;

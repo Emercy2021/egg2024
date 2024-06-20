@@ -57,7 +57,7 @@ function wheelSketch(_p5) {
     _p5.setup = () => {
         counterMax = data.length * height_str;
 
-        const canvas = _p5.createCanvas(750, 400);
+        const canvas = _p5.createCanvas(800, 400);
         canvas.parent('canvas');
 
         _p5.textSize(23);
